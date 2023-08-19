@@ -19,6 +19,7 @@ export const create_payement = async(invoice: Intinvoice)=>{
     const {data} = await axios.post("http://epay.chargily.com.dz/api/invoice", invoice, config)
     const {checkout_url} = data
     // Redirect
+    return(checkout_url)
     // window.location = checkout_url
   } catch (error) {
     console.log(error)
