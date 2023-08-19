@@ -16,7 +16,7 @@ export const create_payement = async(invoice: Intinvoice)=>{
   const appKey = process.env.CHARGILY_APP_KEY ? process.env.CHARGILY_APP_KEY : " "
   const config = {headers : {Accept: "application/json",  "X-Authorization": appKey},  timeout: 1000,}
   try {
-    const {data} = await axios.post("/baseURL/api/invoice", invoice, config)
+    const {data} = await axios.post("http://epay.chargily.com.dz/api/invoice", invoice, config)
     const {checkout_url} = data
     // Redirect
     window.location = checkout_url
