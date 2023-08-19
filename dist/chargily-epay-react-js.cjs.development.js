@@ -396,11 +396,11 @@ var create_payement = /*#__PURE__*/function () {
         switch (_context.prev = _context.next) {
           case 0:
             // adding some validation here 
-            // const appKey:string = process.env.REACT_APP_CHARGILY_APP_KEY ? process.env.REACT_APP_CHARGILY_APP_KEY : "
+            const appKey = process.env.CHARGILY_APP_KEY ? process.env.CHARGILY_APP_KEY : " ",
             config = {
               headers: {
                 Accept: "application/json",
-                "X-Authorization": "api_YWhz6PxwpZFe5ZEfKOPKROXE7vgtmuvPnGJlJJqajQRaiJPaCvzJYOL0Y0gYjS14"
+                "X-Authorization": appKey
               },
               timeout: 1000
             };
