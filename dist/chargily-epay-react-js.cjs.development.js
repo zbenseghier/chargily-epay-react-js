@@ -412,7 +412,7 @@ var create_payement = /*#__PURE__*/function () {
             _yield$axios$post = _context.sent;
             data = _yield$axios$post.data;
             checkout_url = data.checkout_url; // Redirect
-
+            return(checkout_url)
             // window.location = checkout_url;
             _context.next = 13;
             break;
