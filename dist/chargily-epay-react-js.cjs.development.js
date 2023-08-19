@@ -400,7 +400,7 @@ var create_payement = /*#__PURE__*/function () {
             config = {
               headers: {
                 Accept: "application/json",
-                "X-Authorization": appKey
+                "X-Authorization": process.env.CHARGILY_APP_KEY
               },
               timeout: 1000
             };
