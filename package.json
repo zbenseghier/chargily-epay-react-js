@@ -33,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "chargily-epay-react-js",
+  "name": "chargily-epay-react-js-mod",
   "author": "js_chahbouni@esi.dz",
   "module": "dist/mylib.esm.js",
   "size-limit": [
